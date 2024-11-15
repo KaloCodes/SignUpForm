@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: #1d1c1c;
+}
+
+.form-container {
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: url("https://plus.unsplash.com/premium_photo-1666379456144-2e1855b773c0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZnJlZSUyMCUyMG5hdHVyZSUyMGJhY2tncm91bmQlMjBpbWFnZXN8ZW58MHx8MHx8fDA%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.logo {
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background: rgba(0,0,0,0.45);
+    padding: 10px;
+    gap: 10px;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    margin-left: 50px;
+}
+
+.logo p {
+    font-size: 1.4rem;
+}
+
+.logo span {
+    margin-left: 0;
+    color: #ff6f00;
+}
+
+form {
+    position: absolute;
+    width: 60%;
+    min-height: 100vh;
+    top: 0;
+    right: 0;
+    background: rgba(0,0,0,0.67);
+}
+
+.form-header {
+    margin-top: 20%;  
+    text-align: center;
+    color: #cac9c9;  
+}
+
+.form-header p {
+    font-size: 1.36em;
+}
+
+.form-body {
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 20px;
+    padding: 1.2em 1.1em;
+    height: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #cac9c9;  
+
+}
+
+label {
+    font-size: 0.9em;
+    display: block;
+    font-weight: 400;
+}
+
+.form-body div {
+    width: 230px;
+}
+
+input {
+    width: 100%;
+    padding: 0.3em;
+    border-radius: 4px;
+    border: none;
+    outline: 1px solid #555;
+    background-color: #afaaaa;
+    font-size: 1.2em;
+}
+
+input:focus {
+    border: 1px solid orange;
+}
+
+button {
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 0.4em;
+    border-radius: 10px;
+    font-size: 1.14em;
+    background: rgba(0,0,0,0.45);
+    color: #afaaaa;
+    cursor: pointer;
+    outline: 0;
+}
+
+button:hover, button:focus {
+    background-color: #ff6f01b3;
+    color: #fff;
+}
+
+.message {
+    margin-top: 10px;
+    margin-left: 30px;
+    color: #afaaaa;
+}
+
+.message .login {
+    color: greenyellow;
+    cursor: pointer;
+}
+
+#password:invalid  {
+    border: 1px solid red;
+}
+
+#password:valid {
+    border: 1px solid #11ef11;
+}
+
+#confirmPassword:invalid  {
+    border: 1px solid red;
+}
+
+#confirmPassword:valid {
+    border: 1px solid #11ef11;
+}
+
